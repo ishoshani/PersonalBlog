@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
     {
     	DB::table("blogs")->insert(
     		['title'=>"test Blog",
-    		'body'=>"testBlog.md"]);
+            'month'=>1,
+            'year'=>2016]);
     }
 }

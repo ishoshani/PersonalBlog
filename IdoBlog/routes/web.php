@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', "HomeController@index");
+Route::get('/',"HomeController@index");
 Route::post('/blog',"BlogController@post");
 Route::delete('/blog/{$id}',"BlogController@delete");
+Route::get('/blog/{id}',"BlogController@index");
+
 
