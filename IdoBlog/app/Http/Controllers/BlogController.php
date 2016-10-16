@@ -12,7 +12,7 @@ class BlogController extends Controller{
 	public function index($id){
 		$blog = Blog::find($id);
 		$m= Blog::getAllByMonth();
-		return view("home",['blogs'=>[$blog],'byMonth'=>$m]);
+		return view("myhome",['blogs'=>[$blog],'byMonth'=>$m]);
 	}
 	public function post(Request $request){
 		if($request->title==false||$request->body==false){

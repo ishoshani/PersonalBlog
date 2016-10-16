@@ -15,7 +15,7 @@ class Blog extends Model
     protected $dir;
     protected $url;
     public function __construct(){
-        $this->dir = storage_path('/app/public/blogs/');
+        $this->dir = storage_path('app/public/blogs/');
     }
     public function getBody($asHTML){
     	$this->url = $this->dir.$this->id.".md";

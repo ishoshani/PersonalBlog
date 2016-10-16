@@ -33,7 +33,26 @@
         }
     </style>
 </head>
-<body id="app-layout">
+<body id="app-layout" style="background-color:#F06800
+
+
+;">
+    <style>
+        .navbar{
+            background: #40B1A9;
+            border-bottom: thin;
+            border-color: #111;
+        }
+        .navbar-default .navbar-brand {
+            color: #111;
+        }
+        .navbar-default .navbar-text {
+            color: #111;
+        }
+        .navbar-default .navbar-nav>li>a{
+            color: #111;          
+        }
+    </style>
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -57,13 +76,17 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
-                    
+                    @if(Auth::check())
+                   <li><a href="{{ url('logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                    @endif
                 </ul>
             </div>
         </div>
     </nav>
     @yield('content')
+    <div class="container">
     <small>Copyright © 2016 Ido Shoshani</small>
+    </div>
   
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>

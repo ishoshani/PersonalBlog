@@ -15,5 +15,11 @@ class DatabaseSeeder extends Seeder
     		['title'=>"test Blog",
             'month'=>1,
             'year'=>2016]);
+        DB::table("users")->insert(
+            ['id'=>1,
+            "name"=>"ido",
+            "email"=>"idoshoshani@gmail.com",
+            "password"=>"espeon123",
+            ]);
     }
 }
