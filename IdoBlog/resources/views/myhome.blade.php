@@ -1,9 +1,9 @@
 @extends('layouts.mylayout')
 @section('content')
-@include("sidebar",["months"=>$byMonth])
+@include("sidebar",["bMonths"=>$blogsByMonth,"pMonths"=>$projectsByMonth])
 <div id="main">
 	<div class="container">
-	@foreach($blogs as $blog)
+	@foreach($view as $blog)
 	<div class="panel panel-default" style="border: thin; border-color: #111;" >
 		<div class="panel-heading" style="background-color: #40B1A8">
 		<h1>{{$blog->title}}</h1>

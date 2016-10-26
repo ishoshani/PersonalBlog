@@ -57,22 +57,24 @@
         <div class="container">
             <div class="navbar-header">
                <div class ="navbar-brand">
-                    <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+                    <span href="javascript:void(0)" style="cursor:pointer" onclick="hamburger()">&#9776;</span>
 
                </div>
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/')}}">
+                <a class="navbar-brand" href="{{ url('/')}}" style="cursor:pointer" >
 
                     Ido Shoshani
                     
                 </a>
             </div>
             <p class="navbar-text">Coffee, code, games</p>
+            <a class="navbar-text navbar-link" href="{{url('blog')}}" style="cursor:pointer">Blogs</a>
+            <a class="navbar-text navbar-link" href="{{url('projects')}}" style="cursor:pointer">Projects</a>
+
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-
-
+        
+           
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->

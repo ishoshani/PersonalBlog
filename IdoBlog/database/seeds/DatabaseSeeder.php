@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\support\facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        
     	DB::table("blogs")->insert(
     		['title'=>"test Blog",
             'month'=>1,
@@ -19,7 +21,7 @@ class DatabaseSeeder extends Seeder
             ['id'=>1,
             "name"=>"ido",
             "email"=>"idoshoshani@gmail.com",
-            "password"=>"espeon123",
+            "password"=>Hash::make("espeon123"),
             ]);
     }
 }
