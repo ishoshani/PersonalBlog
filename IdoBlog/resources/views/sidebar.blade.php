@@ -1,4 +1,4 @@
-<div id="mySideNav" class="sidenav">
+<div id="mySideNav" class="sidenav" style="width:  0px;">
 	<a data-toggle="collapse" href="#Blogscollapse">Blogs</a>
 	<div class ="collapse" id="Blogscollapse">
 		@foreach($bMonths as $M)
