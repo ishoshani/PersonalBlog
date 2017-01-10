@@ -1,5 +1,5 @@
 function hamburger(){
-	if (document.getElementById("mySideNav").style.width != "250px") {
+	if (document.getElementById("mySideNav").style.width == "0px") {
 		openNav();
 	}
 	else{
