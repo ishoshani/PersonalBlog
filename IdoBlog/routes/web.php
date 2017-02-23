@@ -27,5 +27,5 @@ Route::get('/projects/{id}', "ProjectController@indexWith");
 
 
 Route::post('/projects', "ProjectController@post");
+Route::get('ardemo',"DemoController@index");
 Auth::routes();
-
